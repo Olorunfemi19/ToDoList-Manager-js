@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Manager</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrap">
+        <section class="heading">
+            <p class="title">ToDo Manager</p>
+            <p class="subtitle">Keep in touch with all you have to do</p>
+        </section>
+        <section class="task-manager">
+            <div class="search-box">
+                <form class="search">
+                    <input type="text" name="task" placeholder="Search task" autocomplete="off">
+                    <i class="bi bi-x-circle reset"></i>
+                </form>
+            </div>
+            <div class="task-box">
+                <ul class="tasks">
+                    <li>
+                        <span>Learn React.js</span>
+                        <i class="bi bi-trash-fill delete"></i>
+                    </li>
+                </ul>
+                <form class="add">
+                    <input type="text" name="task" placeholder="Add task" autocomplete="off">
+                    <input type="submit" value="add">
+                </form>
+            </div> 
+            <div class="message-box">
+                <span></span>
+                <button class="clear">Clear all</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
